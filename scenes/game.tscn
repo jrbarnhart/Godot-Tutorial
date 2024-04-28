@@ -422,6 +422,7 @@ z_index = 1
 position = Vector2(18, 28)
 script = ExtResource("2_udynf")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(18, 23)
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -5)
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
