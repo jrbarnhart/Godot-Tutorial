@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c4bn8rixdt08f"]
+[gd_scene load_steps=20 format=3 uid="uid://c4bn8rixdt08f"]
 
 [ext_resource type="Texture2D" uid="uid://tj50i0u3ckhd" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_iidjw"]
 [ext_resource type="PackedScene" uid="uid://cfetgdhqf7gyb" path="res://scenes/player.tscn" id="1_iwtyl"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://pwtem08vskyn" path="res://scenes/killzone.tscn" id="6_wegag"]
 [ext_resource type="PackedScene" uid="uid://bgm707adrqmui" path="res://scenes/green_slime.tscn" id="7_x8b2l"]
 [ext_resource type="FontFile" uid="uid://dcocllkgacb3h" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="8_4l6dw"]
+[ext_resource type="FontFile" uid="uid://djxmq6p322hr3" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="10_1bvax"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78b36"]
 texture = ExtResource("1_iidjw")
@@ -639,13 +640,22 @@ text = "Move: A/D
 Jump: Space"
 
 [node name="Label2" type="Label" parent="Labels"]
-offset_left = 1557.0
-offset_top = 21.0
-offset_right = 1687.0
-offset_bottom = 51.0
+offset_left = 1576.0
+offset_top = 19.0
+offset_right = 1670.0
+offset_bottom = 33.0
 theme_override_fonts/font = ExtResource("8_4l6dw")
 theme_override_font_sizes/font_size = 8
-text = "You made it!
-Collected 
-x/23 Coins."
+text = "You made it!"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 1576.0
+offset_top = 32.0
+offset_right = 1670.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("10_1bvax")
+theme_override_font_sizes/font_size = 8
+text = "Collected:
+x/23 Coins"
 horizontal_alignment = 1
