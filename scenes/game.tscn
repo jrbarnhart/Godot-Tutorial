@@ -503,6 +503,7 @@ script = ExtResource("2_udynf")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -5)
 zoom = Vector2(4, 4)
+limit_bottom = 200
 position_smoothing_enabled = true
 
 [node name="Platform2" parent="." instance=ExtResource("4_a6smb")]
