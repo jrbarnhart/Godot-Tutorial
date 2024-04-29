@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c4bn8rixdt08f"]
+[gd_scene load_steps=17 format=3 uid="uid://c4bn8rixdt08f"]
 
 [ext_resource type="Texture2D" uid="uid://tj50i0u3ckhd" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_iidjw"]
 [ext_resource type="PackedScene" uid="uid://cfetgdhqf7gyb" path="res://scenes/player.tscn" id="1_iwtyl"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://2fgve5k1toqj" path="res://scenes/platform.tscn" id="4_a6smb"]
 [ext_resource type="PackedScene" uid="uid://j1pewd36sxex" path="res://scenes/coin.tscn" id="5_vxha5"]
 [ext_resource type="PackedScene" uid="uid://pwtem08vskyn" path="res://scenes/killzone.tscn" id="6_wegag"]
+[ext_resource type="PackedScene" uid="uid://bgm707adrqmui" path="res://scenes/green_slime.tscn" id="7_x8b2l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78b36"]
 texture = ExtResource("1_iidjw")
@@ -612,3 +613,6 @@ position = Vector2(0, 241)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_3oprv")
+
+[node name="GreenSlime" parent="." instance=ExtResource("7_x8b2l")]
+position = Vector2(-40, 64)
