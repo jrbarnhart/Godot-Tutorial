@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://j1pewd36sxex"]
+[gd_scene load_steps=17 format=3 uid="uid://j1pewd36sxex"]
 
+[ext_resource type="Script" path="res://scripts/coin.gd" id="1_0dvxl"]
 [ext_resource type="Texture2D" uid="uid://bml2vt446ai1v" path="res://assets/brackeys_platformer_assets/sprites/coin.png" id="1_vcttb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lf0ve"]
@@ -98,6 +99,8 @@ animations = [{
 radius = 5.0
 
 [node name="Coin" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_0dvxl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_474b1")
@@ -107,3 +110,5 @@ frame_progress = 0.268743
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ipo8w")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
